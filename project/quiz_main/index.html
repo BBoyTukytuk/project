@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="home-box custom-box ">
+      <h1>Tony的测验</h1>
+      <h1>请翻译成英文 </h1>
+    <p>问题总数: <span class="total-question"></span></p>
+    <button type="button" class="btn" onclick="startQuiz()">开始测验</button>
+</div>
+
+<div class="quiz-box custom-box hide">
+    <div class="question-number">
+    </div>
+    <div class="question-text">
+    </div>
+    <div class="option-container">
+    </div>
+    <div class="next-question-btn">
+        <button type="button" class="btn" onclick="next()">下一个</button>
+    </div>
+    <div class="answers-indicator">
+    </div>
+</div>
+
+<div class="result-box custom-box hide">
+    <h1>结果</h1>
+    <table>
+        <tr>
+            <td>问题总数</td>
+            <td><span class="total-question"></span></td>
+        </tr>
+        <tr>
+            <td>尝试</td>
+            <td><span class="total-attempt"></span></td>
+        </tr>
+        <tr>
+            <td>正确</td>
+            <td><span class="total-correct"></span></td>
+        </tr>
+        <tr>
+            <td>不正确</td>
+            <td><span class="total-wrong"></span></td>
+        </tr>
+        <tr>
+            <td>正确百分率</td>
+            <td><span class="percentage"></span></td>
+        </tr>
+        <tr>
+            <td>的总得分</td>
+            <td><span class="total-score"></span></td>
+        </tr>
+    </table>
+    <button type="button" class="btn" onclick="tryAgainQuiz()">再试一次</button>
+</div>
+
+<script src="question.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
